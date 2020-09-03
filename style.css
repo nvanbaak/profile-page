@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background: cornflowerblue;
+}
+
+nav {
+    margin: auto 0px;
+    /* display: flex;
+    justify-content: flex-end; */
+}
+
+nav a {
+    color: beige;
+}
+
+nav a:hover {
+    color: lightgray;
+}
