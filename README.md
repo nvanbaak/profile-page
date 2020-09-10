@@ -10,7 +10,7 @@ This project was half preparation for professional development down the road and
 
 ##  Responsive Web Design
 
-A key objective for this project was making the web pages mobile-responsive.  This mattered most in two cases, the collapsable navbar, and the porfolio page.
+A key objective for this project was making the web pages mobile-responsive.  This mattered most in two cases, the collapsible navbar, and the porfolio page.
 
 ### Collapsing navbar
 
@@ -23,3 +23,7 @@ A key objective for this project was making the web pages mobile-responsive.  Th
 <img src="./Assets/Images/portfolio-wide.png" alt="two columns at full width">
 
 <img src="./Assets/Images/portfolio-responsive.png" alt="one column in smaller widths">
+
+## View the website here:
+
+> https://nvanbaak.github.io/profile-page/
