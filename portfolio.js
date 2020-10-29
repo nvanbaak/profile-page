@@ -43,14 +43,14 @@ for (let i = 0; i < portfolioEntries.length; i++) {
     portfolio.append(newEntry);
 
     // Header section
-    const cardHeader = $("<h2>").text(entry.title);
+    const cardHeader = $("<h4>").text(entry.title);
     cardHeader.addClass("card-header");
     newEntry.append(cardHeader);
 
     // Image link
     const imgLink = $("<a>").attr("href", `https://github.com/nvanbaak/${entry.github}`);
 
-    const cardImg = $("<img>").addClass("card-img-top .img-thumbnail");
+    const cardImg = $("<img>").addClass("card-img-top");
     cardImg.attr("src", entry.imgURL);
     cardImg.attr("alt", entry.title);
 
@@ -58,6 +58,10 @@ for (let i = 0; i < portfolioEntries.length; i++) {
     newEntry.append(imgLink);
 
     // Description
-    const description = $("<p>")
+    const description = $("<p>").addClass("card-body");
+    description.text(entry.desc);
+    newEntry.append(description);
+
+    
 
 };

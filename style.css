@@ -11,12 +11,8 @@ nav {
 }
 
 .portfolio-box {
-    width: 400px;
-    /* max-height: 400px; */
-}
-
-.img-thumbnail {
-    max-width: calc(100% - 15px);
+    width: 300px;
+    margin-bottom: 20px;
 }
 
 .list-group-item {
