@@ -34,20 +34,30 @@ const portfolioEntries = [
 const portfolio = $(".entries-go-here");
 
 // Populate portfolio
-portfolioEntries.forEach(entry => {
+for (let i = 0; i < portfolioEntries.length; i++) {
+
+    let entry = portfolioEntries[i];
 
     // Make new entry and attach to portfolio
-    const newEntry = $("<div>").addClass("card");
+    const newEntry = $("<div>").addClass("card portfolio-box");
     portfolio.append(newEntry);
 
     // Header section
-    const cardHeader = $("<div>");
-    cardHeader.addClass("card-body");
+    const cardHeader = $("<h2>").text(entry.title);
+    cardHeader.addClass("card-header");
     newEntry.append(cardHeader);
 
-    cardHeader.append($("<h2>").addClass("card-title").text(`${entry.title}`));
+    // Image link
+    const imgLink = $("<a>").attr("href", `https://github.com/nvanbaak/${entry.github}`);
 
-    // const cardImg = $("<img>");
+    const cardImg = $("<img>").addClass("card-img-top .img-thumbnail");
+    cardImg.attr("src", entry.imgURL);
+    cardImg.attr("alt", entry.title);
 
+    imgLink.append(cardImg);
+    newEntry.append(imgLink);
+
+    // Description
+    const description = $("<p>")
 
 });
