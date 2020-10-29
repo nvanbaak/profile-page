@@ -31,8 +31,23 @@ const portfolioEntries = [
     }
 ];
 
+const portfolio = $(".entries-go-here");
+
 // Populate portfolio
-for (let i = 0; i < portfolioEntries; i++) {
+portfolioEntries.forEach(entry => {
+
+    // Make new entry and attach to portfolio
+    const newEntry = $("<div>").addClass("card");
+    portfolio.append(newEntry);
+
+    // Header section
+    const cardHeader = $("<div>");
+    cardHeader.addClass("card-body");
+    newEntry.append(cardHeader);
+
+    cardHeader.append($("<h2>").addClass("card-title").text(`${entry.title}`));
+
+    // const cardImg = $("<img>");
 
 
-}
+});
