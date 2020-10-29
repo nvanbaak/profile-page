@@ -60,4 +60,4 @@ for (let i = 0; i < portfolioEntries.length; i++) {
     // Description
     const description = $("<p>")
 
-});
+};
