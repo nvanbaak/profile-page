@@ -62,6 +62,14 @@ for (let i = 0; i < portfolioEntries.length; i++) {
     description.text(entry.desc);
     newEntry.append(description);
 
-    
+    // Links
+    const githubLink = $("<a>").addClass("card-footer");
+    githubLink.attr("href", `https://github.com/nvanbaak/${entry.github}`);
+    githubLink.text("Github repo")
+    newEntry.append(githubLink);
 
+    const deployedLink = $("<a>").addClass("card-footer");
+    deployedLink.attr("href", `https://nvanbaak.github.io/${entry.github}`);
+    deployedLink.text("Deployed page")
+    newEntry.append(deployedLink);
 };
