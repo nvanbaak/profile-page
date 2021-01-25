@@ -1,16 +1,17 @@
-# Portfolio Proof of Concept
+# Portfolio
 
 ## Overview
 
-This project was half preparation for professional development down the road and half an excuse to join the modern web by learning Bootstrap.  I created and formatted three web pages:
+This my a professional portfolio, [deployed on GitHub](https://nvanbaak.github.io/profile-page/) until I get around to hosting it on my Raspberry Pi.
+
+Current contents:
 
 * A home page with an About Me section
-* A Portfolio page that could host placeholder images for future projects
-* A Contact page using Bootstrap's custom form features
+* A Portfolio page with selected projects
 
 ##  Responsive Web Design
 
-A key objective for this project was making the web pages mobile-responsive.  This mattered most in two cases, the collapsible navbar, and the porfolio page.
+A key objective for this project was making the web pages mobile-responsive.  This mattered most in two cases: the collapsible navbar, and the porfolio page.
 
 ### Collapsing navbar
 
